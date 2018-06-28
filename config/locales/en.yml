@@ -32,7 +32,7 @@
 en:
   users:
     create:
-      success: "Welcome to the Sample App!"
+      info_user: "Please check your email to activate your account."
     show:
       notice: "Not found This User!"
     update:
@@ -41,16 +41,17 @@ en:
       logged: "Please log in."
     destroy:
       destroy: "User deleted"
-      notdestroy: "Can not delete"
       notfound: "Not Found This User!"
     edit:
-      notfound: "Not Found This User!"
-    find_user:
       notfound: "Not Found This User!"
   sessions:
     create:
       right: "Thats Right!"
       wrong: "Invalid email/password combination"
+  account_activations:
+    success: "Account activated!"
+    danger: "Invalid activation link"
+    message: "Account not activated .Check your email for the activation link!"
   users:
     new:
       title: "Sign Up"
@@ -88,7 +89,7 @@ en:
   sessions:
     new:
       title: "Login"
-      title2: "Log in"
+      header: "Log in"
       title3: "Sign Up Now!"
       remember: "Remember me on this computer"
       title4: "New user?"
@@ -124,4 +125,7 @@ en:
       tutorial: "This is the sample application for the tutorial."
       isa: "is a"
       rails: "Ruby on Rails Tutorial"
-
+  user_mailer:
+    account_activation:
+      welcome: "Welcome to the Sample App! Click on the link below to activate your"
+      activate: "Activate"

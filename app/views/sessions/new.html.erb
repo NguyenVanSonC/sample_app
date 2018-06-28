@@ -1,5 +1,5 @@
 <% provide :title, t(".title") %>
-<h1>Log in</h1>
+<h1><%= t ".header" %></h1>
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <%= form_for(:session, url: login_path) do |f| %>
@@ -9,10 +9,10 @@
       <%= f.password_field :password, class: "form-control" %>
       <%= f.label :remember_me, class: "checkbox inline" do %>
         <%= f.check_box :remember_me %>
-        <span><%= t(".remember") %></span>
+        <span><%= t ".remember" %></span>
       <% end %>
-      <%= f.submit t(".title2"), class: "btn btn-primary" %>
+      <%= f.submit t(".header"), class: "btn btn-primary" %>
     <% end %>
-    <p> <%= t(".title4") %> <%= link_to t(".title3"), signup_path %></p>
+    <p> <%= t ".title4" %> <%= link_to t(".title3"), signup_path %></p>
   </div>
 </div>

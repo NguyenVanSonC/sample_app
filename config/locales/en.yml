@@ -35,15 +35,56 @@ en:
       success: "Welcome to the Sample App!"
     show:
       notice: "Not found This User!"
+    update:
+      success: "Profile updated"
+    logged_in_user:
+      logged: "Please log in."
+    destroy:
+      destroy: "User deleted"
+      notdestroy: "Can not delete"
+      notfound: "Not Found This User!"
+    edit:
+      notfound: "Not Found This User!"
+    find_user:
+      notfound: "Not Found This User!"
   sessions:
     create:
-      m1: "Thats Right!"
-      m2: "Invalid email/password combination"
+      right: "Thats Right!"
+      wrong: "Invalid email/password combination"
   users:
     new:
       title: "Sign Up"
       title1: "Confirmation"
       title2: "Create my account"
+    edit:
+      title: "Edit user"
+      header: "Update your profile"
+      change: "Change"
+      config: "Confirmation"
+      save: "Save changes"
+    index:
+      title: "All Users"
+      header: "All Users"
+    _user:
+      sure: "You Sure ?"
+      delete: "Delete"
+  layouts:
+    header:
+      sampleapp: "Sample App"
+      home: "Home"
+      help: "Help"
+      users: "Users"
+      profile: "Profile"
+      setting: "Settings"
+      login: "Log In"
+      logout: "Log Out"
+      account: "Account"
+    footer:
+      tutorial: "The Ruby on Rails Tutorial"
+      michael: "by Michael Hartl"
+      about: "About"
+      contact: "Contact"
+      news: "News"
   sessions:
     new:
       title: "Login"
@@ -51,9 +92,36 @@ en:
       title3: "Sign Up Now!"
       remember: "Remember me on this computer"
       title4: "New user?"
-  views:
-    shared:
-      error: "The form contains"
+  shared:
+    error_messages:
+      messages: "The form contains"
   static_pages:
     home:
-      phone: "09647025"
+      welcome: "Welcome to the Sample App"
+      signup: "Sign Up Now!"
+      page: "This is the home page for the"
+      ruby: "Ruby on Rails Tutorial"
+      sample: "sample application."
+    help:
+      title: "Help"
+      header: "Help"
+      get: "Get help on the Ruby on Rails Tutorial at the"
+      toget: "To get help on this sample app, see the"
+      help: "Rails Tutorial help section"
+      book: "Ruby on Rails Tutorial book"
+    contact:
+      title: "Contact"
+      header: "Contact"
+      contactpage: "contact page"
+      contactruby: "Contact the Ruby on Rails Tutorial about the sample app at the"
+    about:
+      title: "About"
+      header: "About"
+      the: "The"
+      book: "Book"
+      screencast: "screencast series"
+      teach: "to teach web development with"
+      tutorial: "This is the sample application for the tutorial."
+      isa: "is a"
+      rails: "Ruby on Rails Tutorial"
+

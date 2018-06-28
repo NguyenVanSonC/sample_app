@@ -30,6 +30,14 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  application:
+    logged_in_user:
+      logged: "Please log in."
+  microposts:
+    create:
+      success: "Micropost created!"
+    destroy:
+      deleted: "Micropost deleted"
   users:
     create:
       info_user: "Please check your email to activate your account."
@@ -61,6 +69,8 @@ en:
       danger: "Email address not found"
     check_expiration:
       danger: "Password reset has expired."
+  user:
+    shouldbe: "should be less than 5MB"
   mailers:
     account_activation:
       sub_activation: "Account activation"
@@ -111,6 +121,11 @@ en:
   shared:
     error_messages:
       messages: "The form contains"
+    user_info:
+      profile: "view my profile"
+    micropost_form:
+      compose: "Compose new micropost..."
+      post: "Post"
   static_pages:
     home:
       welcome: "Welcome to the Sample App"
@@ -162,3 +177,9 @@ en:
       title: "Reset password"
       header: "Reset password"
       update: "Update password"
+  microposts:
+    micropost:
+      posted: "Posted"
+      ago: "ago ."
+      delete: "Delete"
+      yousure: "You Sure ?"

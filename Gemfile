@@ -22,6 +22,9 @@ gem "turbolinks", "~> 5"
 gem "uglifier", ">= 1.3.0"
 gem "will_paginate", "3.1.6"
 gem "figaro", "~> 1.1", ">= 1.1.1"
+gem "carrierwave", "1.2.2"
+gem "mini_magick", "4.7.0"
+
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
@@ -39,6 +42,10 @@ group :test do
   gem "chromedriver-helper"
   gem "rails-controller-testing", "~> 0.0.3"
   gem "selenium-webdriver"
+end
+
+group :production do
+  gem "fog", "1.42"
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]

@@ -52,6 +52,10 @@ en:
       notfound: "Not Found This User!"
     edit:
       notfound: "Not Found This User!"
+    following:
+      following: "Following"
+    follower:
+      follower: "Followers"
   sessions:
     create:
       right: "Thats Right!"
@@ -93,6 +97,15 @@ en:
     _user:
       sure: "You Sure ?"
       delete: "Delete"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      myprofile: "view my profile"
+      microposts: "Microposts:"
+    show:
+      microposts: "Microposts:"
   layouts:
     header:
       sampleapp: "Sample App"
@@ -123,9 +136,13 @@ en:
       messages: "The form contains"
     user_info:
       profile: "view my profile"
+      microposts: "Microposts:"
     micropost_form:
       compose: "Compose new micropost..."
       post: "Post"
+    stats:
+      following: "following"
+      followers: "followers"
   static_pages:
     home:
       welcome: "Welcome to the Sample App"

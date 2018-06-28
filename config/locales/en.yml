@@ -31,3 +31,6 @@
 
 en:
   hello: "Hello world"
+  static_pages:
+    home:
+      phone: "0964702541"

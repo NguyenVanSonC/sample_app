@@ -1,10 +1,9 @@
 class UsersController < ApplicationController
   def show
     @user = User.find_by(id: params[:id])
-    unless @users
-      flash[:notice] = I18n.t "controllers.users.mess2"
-      render :show
-    end
+    return if @user
+    flash[:notice] = t ".notice"
+    render :show
   end
 
   def new
@@ -14,7 +13,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      flash[:success] = I18n.t "controllers.users.mess1"
+      flash[:success] = t ".success"
       redirect_to @user
     else
       render :new

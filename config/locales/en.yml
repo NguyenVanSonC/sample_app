@@ -30,13 +30,28 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
-  controllers:
-    users:
-      mess1: "Welcome to the Sample App!"
-      mess2: "Not found This User!"
+  users:
+    create:
+      success: "Welcome to the Sample App!"
+    show:
+      notice: "Not found This User!"
+  sessions:
+    create:
+      m1: "Thats Right!"
+      m2: "Invalid email/password combination"
   users:
     new:
-      title: Sign Up
+      title: "Sign Up"
       title1: "Confirmation"
       title2: "Create my account"
+  sessions:
+    new:
+      title: "Login"
+      title2: "Log in"
+      title3: "Sign Up Now!"
+  views:
+    shared:
+      error: "The form contains"
+  static_pages:
+    home:
+      phone: "09647025"

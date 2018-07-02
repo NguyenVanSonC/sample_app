@@ -31,6 +31,12 @@
 
 en:
   hello: "Hello world"
-  static_pages:
-    home:
-      phone: "0964702541"
+  controllers:
+    users:
+      mess1: "Welcome to the Sample App!"
+      mess2: "Not found This User!"
+  users:
+    new:
+      title: Sign Up
+      title1: "Confirmation"
+      title2: "Create my account"

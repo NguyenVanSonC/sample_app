@@ -49,6 +49,8 @@ en:
       title: "Login"
       title2: "Log in"
       title3: "Sign Up Now!"
+      remember: "Remember me on this computer"
+      title4: "New user?"
   views:
     shared:
       error: "The form contains"

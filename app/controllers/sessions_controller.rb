@@ -5,10 +5,10 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:session][:email].downcase)
     if user&.authenticate(params[:session][:password])
       handling(user, params[:session][:remember_me])
-      redirect_to user
-      flash[:success] = t(".m1")
+      redirect_back_or user
+      flash[:success] = t(".right")
     else
-      flash[:danger] = t(".m2")
+      flash[:danger] = t(".wrong")
       render :new
     end
   end

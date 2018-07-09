@@ -1,4 +1,6 @@
-size1: 80
-max1: 50
-max2: 255
-min1: 6
+sizeavatar: 80
+sizeavatar2: 50
+maxname: 50
+maxemail: 255
+minlength_pw: 6
+pageuser: 20

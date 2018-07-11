@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   before_action :correct_user?, only: %i(edit update)
   before_action :verify_admin!, only: :destroy
   before_action :find_user, except: %i(index new create)
+
   def index
     @users = User.select(:id, :name, :email).recent.paginate page: params[:page], per_page: Settings.pageuser
   end
@@ -18,8 +19,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      flash[:success] = t ".success"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t ".info_user"
+      redirect_to root_url
     else
       render :new
     end

@@ -5,7 +5,7 @@ class Micropost < ApplicationRecord
   validate :picture_size
   scope :by_userid, -> id {where user_id: id}
   scope :by_order, -> {order "microposts.created_at DESC"}
-  
+
   private
 
   def picture_size

@@ -9,6 +9,9 @@ class UsersController < ApplicationController
   end
 
   def show
+    @microposts = @user.microposts.by_order.paginate page: params[:page]
+    return if @user
+    flash[:notice] = t ".notice"
     render :show
   end
 
@@ -42,11 +45,10 @@ class UsersController < ApplicationController
   def destroy
     if @user.destroy
       flash[:success] = t ".destroy"
-      redirect_to users_url
     else
       flash[:success] = t ".notdestroy"
-      redirect_to users_url
     end
+    redirect_to users_url
   end
 
   private
@@ -55,26 +57,19 @@ class UsersController < ApplicationController
       :password_confirmation
   end
 
-  def logged_in_user
-    return if logged_in?
-    store_location
-    flash[:danger] = t ".logged"
-    redirect_to login_url
-  end
-
   def correct_user?
     @user = User.find_by id: params[:id]
-    redirect_to root_url unless  current_user? @user
+    redirect_to root_url unless current_user? @user
   end
 
   def verify_admin!
     redirect_to root_url unless current_user.admin?
   end
-  
+
   def find_user
     @user = User.find_by id: params[:id]
     return if @user
     flash[:danger] = t ".notfound"
-    redirect_to root_url 
+    redirect_to root_url
   end
 end
